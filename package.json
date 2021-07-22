@@ -1,0 +1,24 @@
+{
+  "name": "javascript_core",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "verify": "node g2itest.js"
+  },
+  "engine": {
+    "node": ">=14"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "prettier": "^2.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.31.0"
+  }
+}
