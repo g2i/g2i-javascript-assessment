@@ -5,13 +5,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "verify": "node g2itest.js"
+    "test": "yarn jest",
+    "jest": "node --experimental-vm-modules node_modules/.bin/jest",
+    "verify": "yarn test ./g2itest.js"
   },
   "engine": {
     "node": ">=14",
     "npm": "please-use-yarn",
     "yarn": ">= 1.19.1 <2.0.0"
+  },
+  "jest": {
+    "transform": {},
+    "reporters": [
+      "default",
+      "<rootDir>/node_modules/cli-jest-reporter/index.js"
+    ]
   },
   "keywords": [],
   "author": "",
@@ -21,6 +29,8 @@
     "prettier": "2.3.2"
   },
   "devDependencies": {
-    "eslint": "7.31.0"
+    "cli-jest-reporter": "https://github.com/g2i/cli-jest-reporter",
+    "eslint": "7.31.0",
+    "jest": "^27.1.0"
   }
 }
