@@ -7,7 +7,7 @@
   "scripts": {
     "test": "yarn jest",
     "jest": "node --experimental-vm-modules node_modules/.bin/jest",
-    "verify": "yarn test ./g2itest.js"
+    "verify": "yarn test ./g2itest.test.js"
   },
   "engine": {
     "node": ">=14",
